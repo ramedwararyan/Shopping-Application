@@ -1,3 +1,4 @@
+console.log("hello");
 document.addEventListener("DOMContentLoaded", () => {
   const signupForm = document.getElementById("signup-form");
 
