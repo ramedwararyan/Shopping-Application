@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (email === storedUser.email && password === storedUser.password) {
       alert("Login successful!");
-      window.location.href = "Shopping-Application/shop/index.html";
+      window.location.href = "./shop/index.html";
     } else {
       alert("Invalid email or password.");
     }
