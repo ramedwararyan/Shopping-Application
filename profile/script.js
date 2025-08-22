@@ -56,5 +56,5 @@
     // Logout
     document.getElementById("logoutBtn").addEventListener("click", function() {
       alert("You have been logged out.");
-      window.location.href = "./login.html";
+      window.location.href = "../login.html";
     });
