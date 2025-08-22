@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("user", JSON.stringify(userData));
 
     alert("Signup successful!");
-    window.location.href = "/Shopping-Application/authentication/login.html";
+    window.location.href = "login.html";
   });
 });
 
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (email === storedUser.email && password === storedUser.password) {
       alert("Login successful!");
-      window.location.href = "/Shopping-Application/shop/index.html";
+      window.location.href = "../shop/index.html";
     } else {
       alert("Invalid email or password.");
     }
