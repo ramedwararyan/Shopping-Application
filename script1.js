@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       firstName,
       lastName,
       email,
-      password,
+      password
     };
 
     localStorage.setItem("user", JSON.stringify(userData));
