@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("user", JSON.stringify(userData));
 
     alert("Signup successful!");
-    window.location.href = "login.html";
+    window.location.href = "Shopping-Application/authentication/login.html";
   });
 });
 
