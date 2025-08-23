@@ -104,14 +104,6 @@ h1 {
   margin: 0 5px;
 }
 
-
-
-
-
-
-
-
-
 .checkout {
   flex: 1;
   background: black;
@@ -151,4 +143,105 @@ h1 {
   border: none;
   cursor: pointer;
   width: 100%;
+}
+
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-items {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    width: 200px;
+    background: black;
+    padding: 10px 0;
+    border-radius: 5px;
+  }
+
+  .nav-items a {
+    padding: 10px;
+    text-align: center;
+    display: block;
+  }
+
+  .nav-items.active {
+    display: flex;
+  }
+}
+
+/* Cart Page Responsive Design */
+
+/* Tablet screens (<= 1024px) */
+@media (max-width: 1024px) {
+  .cart-items {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+
+  .item {
+    width: 100%; /* Take full column width */
+  }
+
+  .checkout {
+    margin-left: 10px; /* Reduce spacing */
+  }
+}
+
+/* Mobile screens (<= 768px) */
+@media (max-width: 768px) {
+  .cart-container {
+    flex-direction: column; /* Stack checkout below items */
+  }
+
+  .cart-items {
+    grid-template-columns: 1fr; /* 1 item per row */
+    gap: 15px;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .checkout {
+    margin-left: 0;
+    margin-top: 20px; /* Push checkout below items */
+    width: 100%;
+  }
+}
+
+/* Small mobile screens (<= 480px) */
+@media (max-width: 480px) {
+  nav .brand {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .checkout h2 {
+    font-size: 1.2rem;
+  }
+
+  .checkout-btn {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .item img {
+    height: 150px; /* Smaller image for small screens */
+  }
 }

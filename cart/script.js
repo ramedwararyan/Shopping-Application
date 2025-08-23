@@ -1,3 +1,13 @@
+const hamburger = document.getElementById("hamburger");
+  const navItems = document.getElementById("nav-items");
+
+  hamburger.addEventListener("click", () => {
+    navItems.classList.toggle("active");
+    // Toggle hamburger icon between ☰ and ✖
+    hamburger.textContent = navItems.classList.contains("active") ? "✖" : "☰";
+  });
+
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 const cartContainer = document.getElementById("cart-items");
 const checkoutList = document.getElementById("checkout-list");

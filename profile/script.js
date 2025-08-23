@@ -1,4 +1,12 @@
-// Write your script here
+const hamburger = document.getElementById("hamburger");
+  const navItems = document.getElementById("nav-items");
+
+  hamburger.addEventListener("click", () => {
+    navItems.classList.toggle("active");
+    // Toggle hamburger icon between ☰ and ✖
+    hamburger.textContent = navItems.classList.contains("active") ? "✖" : "☰";
+  });
+
  // Update Info
     document.getElementById("update-info-form").addEventListener("submit", function(e) {
       e.preventDefault();
